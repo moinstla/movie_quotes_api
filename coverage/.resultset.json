@@ -345,8 +345,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -423,6 +423,21 @@
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/quotes_api/spec/requests/delete_quote_spec.rb": [
+        1,
+        1,
+        null,
+        1,
         1,
         1,
         1,
@@ -566,6 +581,6 @@
         null
       ]
     },
-    "timestamp": 1500501858
+    "timestamp": 1500502283
   }
 }

@@ -262,7 +262,7 @@
       "/Users/Guest/Desktop/quotes_api/app/controllers/application_controller.rb": [
         1,
         1,
-        0,
+        1,
         null,
         1,
         2,
@@ -278,7 +278,7 @@
         null,
         null,
         1,
-        0,
+        1,
         0,
         null,
         null,
@@ -308,7 +308,7 @@
         null,
         1,
         1,
-        7,
+        8,
         null,
         null,
         1,
@@ -438,6 +438,21 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/quotes_api/spec/requests/get_exception_spec.rb": [
+        1,
+        null,
+        1,
+        null,
         1,
         1,
         1,
@@ -599,6 +614,6 @@
         null
       ]
     },
-    "timestamp": 1500502995
+    "timestamp": 1500503451
   }
 }

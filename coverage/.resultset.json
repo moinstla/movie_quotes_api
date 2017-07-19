@@ -273,8 +273,10 @@
         1,
         null,
         1,
-        2,
-        2,
+        4,
+        4,
+        4,
+        4,
         null,
         null,
         1,
@@ -308,7 +310,7 @@
         null,
         1,
         1,
-        10,
+        12,
         null,
         null,
         1,
@@ -379,6 +381,8 @@
         1,
         1,
         1,
+        null,
+        5,
         null
       ],
       "/Users/Guest/Desktop/quotes_api/app/models/quote.rb": [
@@ -521,6 +525,25 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/quotes_api/spec/requests/get_title_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/quotes_api/spec/requests/patch_movie_spec.rb": [
         1,
         null,
@@ -633,6 +656,6 @@
         null
       ]
     },
-    "timestamp": 1500505078
+    "timestamp": 1500507296
   }
 }

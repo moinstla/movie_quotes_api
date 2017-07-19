@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "patch movies route", type: :request do
   before do
     movie = FactoryGirl.create(:movie)
-    put "/movies/#{movie.id}", params: {
+    patch "/movies/#{movie.id}", params: {
       :title => "new title",
       :genre => "genre"
     }
@@ -21,5 +21,4 @@ describe "patch movies route", type: :request do
   it do
     expect(Movie.first.title).to eq "new title"
   end
-
 end

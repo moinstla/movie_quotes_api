@@ -12,6 +12,11 @@ class MoviesController < ApplicationController
     json_response(movie)
   end
 
+  def most_quotes
+    @movies = Movie.most_quotes
+    json_response(@movies)
+  end
+
   def create
     @movie = Movie.create!(movie_params)
     json_response(@movie, :accepted)

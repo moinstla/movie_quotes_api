@@ -18,7 +18,11 @@ class QuotesController < ApplicationController
 
   def update
     @quote = Quote.find(params[:id])
-    @quote.update(quote_params)
+    if @quote.update!(quote_params)
+      render status: 200, json: {
+        message: "Quote has been updated."
+      }
+    end
   end
 
   def destroy

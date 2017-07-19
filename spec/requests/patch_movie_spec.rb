@@ -10,7 +10,7 @@ describe "patch movies route", type: :request do
   end
 
   it 'updates movie' do
-    expect(JSON.parse(response.body)['message']).to eq "Entry has been updated."
+    expect(JSON.parse(response.body)['message']).to eq "Movie has been updated."
   end
 
   it 'should return status 200' do

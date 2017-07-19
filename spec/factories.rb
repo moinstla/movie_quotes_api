@@ -3,4 +3,10 @@ FactoryGirl.define do
     title 'title'
     genre 'genre'
   end
+
+  factory :quote do
+    character 'character'
+    content 'content'
+    movie_id 1
+  end
 end

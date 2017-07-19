@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
     @movie.destroy
     if @movie.destroy!
       render status: 200, json: {
-        message: "The movie has been deleted"
+        message: "The movie has been deleted."
       }
   end
 end

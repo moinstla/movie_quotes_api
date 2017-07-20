@@ -4,7 +4,8 @@ class MoviesController < ApplicationController
     @movies = Movie.all
     title = params[:title]
     @movies = Movie.title_search(title)
-    json_response(@movies)
+    json_response(@movies.page(params[:page]))
+
   end
 
   def show

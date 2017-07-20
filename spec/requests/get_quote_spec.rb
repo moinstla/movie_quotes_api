@@ -3,9 +3,10 @@ require 'rails_helper'
 describe "get quote path" do
 
   before do
+    token = FactoryGirl.create(:api_key)
     movie = Movie.create(title: 'test', genre: 'genre', id: 1)
     quote = FactoryGirl.create(:quote)
-    get "/movies/#{movie.id}/quotes/#{quote.id}"
+    get "/movies/#{movie.id}/quotes/#{quote.id}?access_token=#{token.access_token}"
   end
 
   it 'returns a quote' do

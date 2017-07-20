@@ -3,8 +3,9 @@ require 'rails_helper'
 describe "get movie by title route" do
 
   before do
+    token = FactoryGirl.create(:api_key)
     movie = FactoryGirl.create(:movie)
-    get "/movies?title=title"
+    get "/movies?title=title&access_token=#{token.access_token}"
   end
 
   it "returns movie by title" do

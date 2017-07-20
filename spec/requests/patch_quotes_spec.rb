@@ -4,9 +4,10 @@ describe "patch quote route", :type => :request do
 
 
   before do
+    token = FactoryGirl.create(:api_key)
     movie = Movie.create(title: 'test', genre: 'genre', id: 1)
     quote = FactoryGirl.create(:quote)
-    patch "/movies/#{movie.id}/quotes/#{quote.id}",
+    patch "/movies/#{movie.id}/quotes/#{quote.id}?access_token=#{token.access_token}",
     params: {
       :character => "new character",
       :content => "new content"

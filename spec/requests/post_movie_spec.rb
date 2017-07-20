@@ -3,7 +3,8 @@ require 'rails_helper'
 describe "post a movie route", :type => :request do
 
   before do
-    post '/movies', params: { :title => 'test_title', :genre => 'test_genre' }
+    token = FactoryGirl.create(:api_key)
+    post "/movies?access_token=#{token.access_token}", params: { :title => 'test_title', :genre => 'test_genre' }
   end
 
   it 'returns the title name' do

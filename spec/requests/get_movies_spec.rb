@@ -3,7 +3,11 @@ require 'rails_helper'
 describe "get all movies route", :type => :request do
   let!(:movies) { FactoryGirl.create_list(:movie, 21)}
 
-  before { get '/movies' }
+
+  before do
+    token = FactoryGirl.create(:api_key)
+    get "/movies?access_token=#{token.access_token}"
+  end
 
   it 'returns all movies' do
     expect(JSON.parse(response.body).size).to eq 5

@@ -1,9 +1,11 @@
 require 'rails_helper'
 
 describe "patch movies route", type: :request do
+  
   before do
+    token = FactoryGirl.create(:api_key)
     movie = FactoryGirl.create(:movie)
-    patch "/movies/#{movie.id}", params: {
+    patch "/movies/#{movie.id}?access_token=#{token.access_token}", params: {
       :title => "new title",
       :genre => "genre"
     }

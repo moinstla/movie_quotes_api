@@ -3,7 +3,8 @@ require 'rails_helper'
 describe "post exception route", :type => :request do
 
   before do
-    post '/movies', params: { title: '', genre: 'genre'}
+    token = FactoryGirl.create(:api_key)
+    post "/movies?access_token=#{token.access_token}", params: { title: '', genre: 'genre'}
   end
 
   it 'returns error message' do

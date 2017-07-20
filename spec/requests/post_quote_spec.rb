@@ -4,8 +4,9 @@ describe "post quote route", :type => :request do
 
 
   before do
+    token = FactoryGirl.create(:api_key)
     movie = Movie.create(title: 'test', genre: 'genre', id: 1)
-    post "/movies/#{movie.id}/quotes", params: { character: 'Sway', content: 'test quote', rating: 2, movie_id: 1 }
+    post "/movies/#{movie.id}/quotes?access_token=#{token.access_token}", params: { character: 'Sway', content: 'test quote', rating: 2, movie_id: 1 }
   end
 
   it 'returns the quote' do

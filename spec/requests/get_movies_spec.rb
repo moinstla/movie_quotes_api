@@ -6,7 +6,7 @@ describe "get all movies route", :type => :request do
   before { get '/movies' }
 
   it 'returns all movies' do
-    expect(JSON.parse(response.body).size).to eq 21
+    expect(JSON.parse(response.body).size).to eq 5
   end
 
   it 'returns status code 200' do

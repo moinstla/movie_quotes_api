@@ -347,12 +347,6 @@
         null,
         null,
         1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        2,
         2,
         2,
         null,
@@ -363,6 +357,12 @@
         2,
         null,
         null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
         null,
         null,
         null,
@@ -373,7 +373,7 @@
         null,
         1,
         1,
-        4,
+        6,
         null,
         null,
         1,
@@ -435,7 +435,6 @@
       ],
       "/Users/Guest/Desktop/movie_quotes_api/config/routes.rb": [
         1,
-        null,
         null,
         1,
         1,
@@ -536,6 +535,27 @@
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/movie_quotes_api/spec/requests/get_quote_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         null
       ],
@@ -691,6 +711,6 @@
         null
       ]
     },
-    "timestamp": 1500570627
+    "timestamp": 1500571529
   }
 }

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-20T10:10:27-07:00">2017-07-20T10:10:27-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-20T10:25:29-07:00">2017-07-20T10:25:29-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.07%</span></span>
+    (<span class="covered_percent"><span class="green">98.88%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.34
+         1.37
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>39</b> files in total.
-    <b>259</b> relevant lines. 
-    <span class="green"><b>254</b> lines covered</span> and
-    <span class="red"><b>5</b> lines missed </span>
+    <b>40</b> files in total.
+    <b>269</b> relevant lines. 
+    <span class="green"><b>266</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#373b2fa8470694e633b0890a960eccdb83f88ea5" class="src_link" title="app/controllers/quotes_controller.rb">app/controllers/quotes_controller.rb</a></td>
-        <td class="green strong">91.3 %</td>
+        <td class="green strong">100.0 %</td>
         <td>41</td>
         <td>23</td>
-        <td>21</td>
-        <td>2</td>
-        <td>1.5</td>
+        <td>23</td>
+        <td>0</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -273,7 +273,7 @@
       <tr>
         <td class="strong"><a href="#5385d2d0aaf7843c41a1ced856a7bee5f2962706" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
+        <td>13</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -368,6 +368,16 @@
         <td>8</td>
         <td>0</td>
         <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ef7d908df9d431c0c6a2ff61991ebd1535e62631" class="src_link" title="spec/requests/get_quote_spec.rb">spec/requests/get_quote_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -949,11 +959,11 @@
         <div class="source_table" id="373b2fa8470694e633b0890a960eccdb83f88ea5">
   <div class="header">
     <h3>app/controllers/quotes_controller.rb</h3>
-    <h4><span class="green">91.3 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>23</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>23</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1008,14 +1018,14 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">    @quote = Quote.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">    json_response(@quote)</code>
         </li>
@@ -1164,8 +1174,8 @@
           <code class="ruby">  def json_response(object, status = :ok)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="35">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="35">
+          <span class="hits">6</span>
           
           <code class="ruby">    render json: object, status: status</code>
         </li>
@@ -2697,76 +2707,70 @@
         <li class="never" data-hits="" data-linenumber="2">
           
           
-          <code class="ruby">  # root to: &#39;movies#index&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  concern :paginatable do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">    get &#39;(page/:page)&#39;, action: :index, on: :collection, as: &#39;&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  resources :movies, concerns: :paginatable do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">    collection do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">      get :most_quotes</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">    resources :quotes</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -3898,6 +3902,139 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ef7d908df9d431c0c6a2ff61991ebd1535e62631">
+  <div class="header">
+    <h3>spec/requests/get_quote_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;get quote path&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    movie = Movie.create(title: &#39;test&#39;, genre: &#39;genre&#39;, id: 1)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    quote = FactoryGirl.create(:quote)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    get &quot;/movies/#{movie.id}/quotes/#{quote.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns a quote&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(JSON.parse(response.body).size).to eq 6</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns status code 200&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to have_http_status :success</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>

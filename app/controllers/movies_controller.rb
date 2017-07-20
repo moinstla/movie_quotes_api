@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+# http_basic_authenticate_with name: "admin", password: "secret"
+# respond_to :json
 
   def index
     @movies = Movie.all

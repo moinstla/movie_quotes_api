@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "get movie by most quotes route" do
+context "get movie by most quotes route" do
 
   before do
     movie = Movie.create(title: 'test', genre: 'genre', id: 1)
@@ -8,7 +8,7 @@ describe "get movie by most quotes route" do
     get "/movies/most_quotes"
   end
 
-  it "returns movie with the most quotes" do
+  it "when movie with most quotes queried" do
     expect(Movie.first.title).to eq "test"
   end
 

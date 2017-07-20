@@ -1,6 +1,5 @@
 class MoviesController < ApplicationController
-# http_basic_authenticate_with name: "admin", password: "secret"
-# respond_to :json
+before_action :restrict_access
 
   def index
     @movies = Movie.all
@@ -52,4 +51,13 @@ private
   def movie_params
     params.permit(:title, :genre)
   end
-end
+
+  def restrict_access
+    api_key = ApiKey.find_by_access_token(params[:access_token])
+    head :unauthorized unless api_key
+  end
+
+  # def restrict_access
+  #   authenticate_or_request_with_http_token do |token, options|
+  #     ApiKey.exists?(access_token: token)
+  #   end
